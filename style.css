@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+#Canvas-WEBGL {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#text-block {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    transform: translateX(50%);
+    color: white;
+    background-color: rgba(209, 200, 200, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+}
+#text-block p {
+    text-align: center;
+}
+#unsupported-message{
+    display: none; 
+    position: absolute;
+     top: 50%; left: 50%; 
+     transform: translate(-50%, -50%);
+    font-size: 2em; 
+    color: white; 
+    text-align: center;
+}
